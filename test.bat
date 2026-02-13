@@ -5,6 +5,7 @@
 ::pause
 
 echo "Testing Docker-in-Docker..."
-docker run --privileged --rm -it docker:dind sh
+:: /usr/local/bin/docker
+docker run --privileged --rm -it docker:dind "sh"
 
 pause
