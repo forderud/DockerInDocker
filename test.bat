@@ -9,7 +9,7 @@
 
 echo "Building docker-in-docker..."
 docker build -f dind.Dockerfile .
-pause
+::pause
 
 
 ::echo "Testing Docker-in-Docker..."
