@@ -4,6 +4,9 @@
 ::docker build .
 ::pause
 
+::To investigate:
+::* DOCKER_TLS_CERTDIR
+
 echo "Testing Docker-in-Docker..."
 :: /usr/local/bin/docker
 docker run --privileged --rm -it docker:dind "sh"
