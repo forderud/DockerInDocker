@@ -12,5 +12,4 @@ RUN update-ca-certificates
 RUN wget https://raw.githubusercontent.com/forderud/QtWasm/refs/heads/master/README.md
 
 # Test dind
-# FAILS with: failed to connect to the docker API at unix:///var/run/docker.sock
 # RUN docker build -f Ubuntu-24.04.Dockerfile .
