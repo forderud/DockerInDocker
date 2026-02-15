@@ -12,7 +12,7 @@ docker build -t gehc-dind -f dind.Dockerfile .
 echo Testing Docker-in-Docker...
 
 set DIND_PARAMS=-v /var/run/docker.sock:/var/run/docker.sock
-::set DIND_PARAMS=--privileged -e DOCKER_TLS_CERTDIR=/certs
+::set DIND_PARAMS=--privileged -e DOCKER_TLS_CERTDIR=/certs -v /certs/client
 
 ::docker run %DIND_PARAMS% --rm -it gehc-dind sh
 
