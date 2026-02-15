@@ -12,7 +12,8 @@ RUN update-ca-certificates
 RUN wget https://raw.githubusercontent.com/forderud/QtWasm/refs/heads/master/README.md
 
 # copy GEHC root certificates for nested container access
+# WORKDIR is "/"
 COPY gehealthcarerootca1.crt gehealthcarerootca2.crt /
 
-# Test dind
+# Test docker-in-docker (dind)
 # RUN docker build -f Ubuntu-24.04.Dockerfile .
