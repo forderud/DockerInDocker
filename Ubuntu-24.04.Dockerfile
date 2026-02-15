@@ -11,3 +11,5 @@ RUN wget -O /usr/local/share/ca-certificates/gehealthcarerootca2.crt http://aia.
 #COPY gehealthcarerootca1.crt gehealthcarerootca2.crt /usr/local/share/ca-certificates
 RUN update-ca-certificates
 
+# Verify working TLS
+RUN wget https://raw.githubusercontent.com/forderud/QtWasm/refs/heads/master/README.md
