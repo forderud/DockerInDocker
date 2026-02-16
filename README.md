@@ -17,6 +17,11 @@ Run Alpine container from within DinD container:
 docker run --rm alpine echo "Hello from Docker inside Docker!"
 ```
 
+Stop DinD container to clean up:
+```
+docker stop mydind
+```
+
 
 ## Links
 * [Docker in Docker](https://hub.docker.com/_/docker) (commonly known as "dind")
