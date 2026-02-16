@@ -13,7 +13,7 @@ RUN wget https://raw.githubusercontent.com/forderud/QtWasm/refs/heads/master/REA
 
 # copy GEHC root certificates for nested container access
 # WORKDIR is "/"
-COPY gehealthcarerootca1.crt gehealthcarerootca2.crt /
+COPY gehealthcarerootca1.crt gehealthcarerootca2.crt .
 
 # Test docker-in-docker (dind)
 # RUN docker build -f Ubuntu-24.04.Dockerfile .
