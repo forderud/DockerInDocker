@@ -14,6 +14,7 @@ docker exec -it mydind sh
 
 Run Alpine container from within DinD container:
 ```
+# tls: failed to verify certificate: x509: certificate signed by unknown authority
 docker run --rm alpine echo "Hello from Docker inside Docker!"
 ```
 
