@@ -4,7 +4,7 @@ Docker-in-docker (dind) experiments within the GEHC network
 ## Working sample
 Run the DinD container in privileged mode:
 ```
-docker run -d --privileged --name mydind docker:dind
+docker run -d --privileged --name mydind gehc-dind
 ```
 
 Access the DinD container's shell:
@@ -14,7 +14,6 @@ docker exec -it mydind sh
 
 Run Alpine container from within DinD container:
 ```
-# tls: failed to verify certificate: x509: certificate signed by unknown authority
 docker run --rm alpine echo "Hello from Docker inside Docker!"
 ```
 
