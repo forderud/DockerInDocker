@@ -16,12 +16,12 @@ echo Testing Docker-in-Docker...
 ::docker run %DOCKER_PARAMS% --rm -it gehc-dind sh -c "echo Trying to run docker..; docker build -f Ubuntu-24.04.Dockerfile ."
 
 echo Starting DinD container...
-docker run -d --privileged --name mydind gehc-dind
+docker run -d --privileged --name dind-instance gehc-dind
 
 echo Connecting to DinD container...
-docker exec -it mydind sh
-::docker exec -it mydind sh -c "echo Trying to run docker..; docker build -f Ubuntu-24.04.Dockerfile ."
+docker exec -it dind-instance sh
+::docker exec -it dind-instance sh -c "echo Trying to run docker..; docker build -f Ubuntu-24.04.Dockerfile ."
 
 echo Stopping DinD container...
-docker stop mydind
-docker rm mydind
+docker stop dind-instance
+docker rm dind-instance
