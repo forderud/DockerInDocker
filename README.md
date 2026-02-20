@@ -19,8 +19,7 @@ docker run --rm alpine echo "Hello from Docker inside Docker!"
 
 Stop DinD container to clean up:
 ```
-docker stop mydind
-docker rm mydind
+docker rm --force mydind
 ```
 
 

@@ -23,5 +23,4 @@ docker exec -it dind-instance sh
 ::docker exec -it dind-instance sh -c "echo Trying to run docker..; docker build -f Ubuntu-24.04.Dockerfile ."
 
 echo Stopping DinD container...
-docker stop dind-instance
-docker rm dind-instance
+docker rm --force dind-instance
