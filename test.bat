@@ -11,9 +11,11 @@ docker build -t gehc-dind -f dind.Dockerfile .
 
 echo Testing Docker-in-Docker...
 
-:: Socket binding mode
+:: Socket binding mode (works nicely)
 set DIND_PARAMS=-v /var/run/docker.sock:/var/run/docker.sock
-:: Docker-in-Docker (dind) mode
+
+:: Docker-in-Docker (dind) mode (doesn't work)
+:: Fails with "ERROR: failed to connect to the docker API at tcp://docker:2375: lookup docker on 192.168.65.7:53: no such host"
 ::set DIND_PARAMS=--privileged -e DOCKER_TLS_CERTDIR=/certs -v /certs/client
 
 ::docker run %DIND_PARAMS% --rm -it gehc-dind sh
