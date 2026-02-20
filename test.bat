@@ -17,6 +17,7 @@ set DIND_PARAMS=-v /var/run/docker.sock:/var/run/docker.sock
 :: Docker-in-Docker (dind) mode (doesn't work)
 :: Fails with "ERROR: failed to connect to the docker API at tcp://docker:2375: lookup docker on 192.168.65.7:53: no such host"
 ::set DIND_PARAMS=--privileged -e DOCKER_TLS_CERTDIR=/certs -v /certs/client
+:: -e DOCKER_HOST=tcp://dind:2375 -v /certs/client -p 2375:2375
 
 ::docker run %DIND_PARAMS% --rm -it gehc-dind sh
 docker run %DIND_PARAMS% --rm -it gehc-dind sh -c "echo Trying to run docker..; docker build -f Ubuntu-24.04.Dockerfile ."
