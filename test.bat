@@ -1,10 +1,6 @@
 @echo off
 
-::echo "Testing Ubuntu image build..."
-::docker build -f Ubuntu-24.04.Dockerfile .
-::pause
-
-echo Building docker-in-docker image...
+echo Building custom docker-in-docker image...
 docker build -t gehc-dind -f dind.Dockerfile .
 ::pause
 
