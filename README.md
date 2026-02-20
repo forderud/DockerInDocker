@@ -26,5 +26,6 @@ docker rm mydind
 
 ## Links
 * [Docker in Docker](https://hub.docker.com/_/docker) (commonly known as "dind")
+* DockerCon 2023: [Docker-in-Docker: Containerized CI Workflows](https://youtu.be/JyEwKm-OfxA?si=iCzvrC74hiWTqdvo)
 * GitLab [Use Docker to build Docker images](https://docs.gitlab.com/ci/docker/using_docker_build/)
 * ~~Sintef [Setup your own dind-GitLab runner](https://sintef.pages.sintef.no/docs/docs.wiki/Setup-your-own-dind-GitLab-Runner.html)~~
