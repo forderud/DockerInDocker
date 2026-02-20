@@ -11,7 +11,7 @@ docker build -t gehc-dind -f dind.Dockerfile .
 
 echo Testing Docker-in-Docker...
 
-:: Socket binding mode (works nicely)
+:: System-wide Docker-out-of-Docker socket binding mode (works nicely)
 set DIND_PARAMS=-v /var/run/docker.sock:/var/run/docker.sock
 
 :: Docker-in-Docker (dind) mode (doesn't work)
