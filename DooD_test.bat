@@ -4,7 +4,6 @@ echo Building custom docker-in-docker image...
 docker build -t gehc-dind -f dind.Dockerfile .
 ::pause
 
-
 echo Testing Docker-out-of-Docker...
 
 :: System-wide Docker-out-of-Docker (DooD) socket binding mode (works nicely)
