@@ -1,26 +1,5 @@
 # DockerInDocker
-Docker-in-docker (dind) samples.
-
-## Working sample
-Run the DinD container in privileged mode:
-```
-docker run -d --privileged --name mydind gehc-dind
-```
-
-Access the DinD container's shell:
-```
-docker exec -it mydind sh
-```
-
-Run Alpine container from within DinD container:
-```
-docker run --rm alpine echo "Hello from Docker inside Docker!"
-```
-
-Stop DinD container to clean up:
-```
-docker rm --force mydind
-```
+Docker-in-docker (DinD) and Docker-out-of-Docker (DooD) samples.
 
 
 ## Links
