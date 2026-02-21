@@ -1,5 +1,5 @@
 # DockerInDocker
-Docker-in-docker (dind) experiments within the GEHC network
+Docker-in-docker (dind) samples.
 
 ## Working sample
 Run the DinD container in privileged mode:
