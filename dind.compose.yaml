@@ -1,5 +1,5 @@
 services:
-  dind:
+  mydind:
     build:
       context: .
       dockerfile: dind.Dockerfile
