@@ -17,3 +17,6 @@ COPY gehealthcarerootca1.crt gehealthcarerootca2.crt ./
 
 # Test docker-in-docker (dind)
 # RUN docker build -f Ubuntu-24.04.Dockerfile .
+
+HEALTHCHECK --interval=1s --timeout=3s --retries=30 \
+  CMD docker info > /dev/null 2>&1 || exit 1
