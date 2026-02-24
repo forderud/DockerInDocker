@@ -1,9 +1,5 @@
 @echo off
 
-echo Building custom docker-in-docker image...
-docker build -t gehc-dind -f dind.Dockerfile .
-::pause
-
 echo Testing Docker-in-Docker...
 
 echo Starting DinD container...
