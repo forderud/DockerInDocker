@@ -1,0 +1,12 @@
+services:
+  dind:
+    build:
+      context: .
+      dockerfile: dind.Dockerfile
+    privileged: true
+    container_name: dind-instance
+    healthcheck:
+      test: ["CMD", "docker", "info"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
