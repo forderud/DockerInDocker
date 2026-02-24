@@ -8,4 +8,5 @@ Docker-in-docker (DinD) and Docker-out-of-Docker (DooD) samples.
 
 ### GitLab CI usage
 * GitLab [Use Docker to build Docker images](https://docs.gitlab.com/ci/docker/using_docker_build/)
+* https://oneuptime.com/blog/post/2026-01-16-docker-in-docker-dind/view
 * ~~Sintef [Setup your own dind-GitLab runner](https://sintef.pages.sintef.no/docs/docs.wiki/Setup-your-own-dind-GitLab-Runner.html)~~
