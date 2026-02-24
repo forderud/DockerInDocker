@@ -1,4 +1,3 @@
-# DockerInDocker
 Docker-in-docker (DinD) and Docker-out-of-Docker (DooD) samples.
 
 
