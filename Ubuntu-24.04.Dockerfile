@@ -1,6 +1,7 @@
 FROM ubuntu:24.04
 
-RUN apt-get update
+# Download latest package information
+RUN apt update
 
 # Install compiler and libraries
 RUN apt-get install -y wget ca-certificates g++ cmake libboost-dev libssl-dev
