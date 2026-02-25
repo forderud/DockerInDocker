@@ -1,10 +1,10 @@
 FROM ubuntu:24.04
 
 # Download latest package information
-RUN apt update
+RUN apt-get -y update
 
 # Install compiler and libraries
-RUN apt install -y wget ca-certificates g++ cmake libboost-dev libssl-dev
+RUN apt-get install -y wget ca-certificates g++ cmake libboost-dev libssl-dev
 
 # Install GEHC root certificates
 #RUN wget -O /usr/local/share/ca-certificates/gehealthcarerootca1.crt http://aia.ge-healthcare.net/gehealthcarerootca1.pem
