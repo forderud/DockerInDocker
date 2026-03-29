@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Fedora install steps:
+# sudo dnf config-manager addrepo --from-repofile="https://download.docker.com/linux/fedora/docker-ce.repo"
+# sudo dnf install docker-ce docker-ce-cli containerd.io
+
+# start service
 sudo systemctl start docker
 
 echo Building custom docker-in-docker image...
