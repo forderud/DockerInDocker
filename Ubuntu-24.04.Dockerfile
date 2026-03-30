@@ -13,4 +13,4 @@ COPY gehealthcarerootca1.crt gehealthcarerootca2.crt /usr/local/share/ca-certifi
 RUN update-ca-certificates
 
 # Verify working TLS
-RUN wget https://raw.githubusercontent.com/forderud/QtWasm/refs/heads/master/README.md
+RUN wget https://www.google.com/index.html
