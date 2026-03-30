@@ -3,6 +3,7 @@ Docker-in-docker (DinD) and Docker-out-of-Docker (DooD) samples.
 
 ## Links
 * [Docker in Docker](https://hub.docker.com/_/docker) (commonly known as "dind")
+* https://docs.docker.com/guides/zscaler/
 * [How To Run Docker in Docker Container [3 Easy Methods]](https://devopscube.com/run-docker-in-docker/)
 * DockerCon 2023: [Docker-in-Docker: Containerized CI Workflows](https://youtu.be/JyEwKm-OfxA?si=iCzvrC74hiWTqdvo)
 
