@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# start service
+sudo systemctl start docker
+
+echo Testing Docker-in-Docker...
+
+echo Starting DinD container...
+docker compose -f dind.compose.yaml up -d --wait
+
+echo Running DinD commands...
+#docker exec -it dind-instance sh
+docker exec -it dind-instance sh -c "docker build -f Ubuntu-24.04.Dockerfile ."
+
+echo Stopping DinD container...
+docker rm --force dind-instance
