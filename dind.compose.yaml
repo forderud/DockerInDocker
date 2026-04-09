@@ -1,5 +1,6 @@
 services:
   mydind:
+    network_mode: "host" # --network=host
     build:
       context: .
       dockerfile: dind.Dockerfile
