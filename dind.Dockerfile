@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:dind
 
 COPY Ubuntu-24.04.Dockerfile .
 
