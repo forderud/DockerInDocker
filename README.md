@@ -10,7 +10,7 @@ Official [Docker in Docker](https://hub.docker.com/_/docker) images (commonly kn
 * [How To Run Docker in Docker Container [3 Easy Methods]](https://devopscube.com/run-docker-in-docker/)
 * DockerCon 2023: [Docker-in-Docker: Containerized CI Workflows](https://youtu.be/JyEwKm-OfxA?si=iCzvrC74hiWTqdvo)
 
-### GitLab CI usage
+### GitLab CI
 * GitLab [Use Docker to build Docker images](https://docs.gitlab.com/ci/docker/using_docker_build/)
 * https://oneuptime.com/blog/post/2026-01-16-docker-in-docker-dind/view
 * GitLab [CI/CD YAML syntax reference](https://docs.gitlab.com/ci/yaml/)
