@@ -1,8 +1,11 @@
 Docker-in-docker (DinD) and Docker-out-of-Docker (DooD) samples.
 
+## Docker in Docker image variants
+Official [Docker in Docker](https://hub.docker.com/_/docker) images (commonly known as "dind"):
+* `<version>-dind`/`latest`: Contains Docker engine as well as the Docker CLI.
+* `<version>-cli`: Contains Docker CLI but _not_ the engine
 
 ## Links
-* Official [Docker in Docker](https://hub.docker.com/_/docker) images (commonly known as "dind")
 * https://docs.docker.com/guides/zscaler/
 * [How To Run Docker in Docker Container [3 Easy Methods]](https://devopscube.com/run-docker-in-docker/)
 * DockerCon 2023: [Docker-in-Docker: Containerized CI Workflows](https://youtu.be/JyEwKm-OfxA?si=iCzvrC74hiWTqdvo)
