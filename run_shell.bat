@@ -3,11 +3,10 @@
 :: Docker-in-Docker (DinD):
 :: TODO: Propagate TLS certificates to container
 :: --network=host
-:: -e DOCKER_TLS_CERTDIR=""
 :: -e DOCKER_TLS_CERTDIR=/certs
-:: -e DOCKER_HOST=tcp://localhost:2375
 docker run -d --privileged --name dind-instance docker:dind
 docker exec -it dind-instance sh
+::docker exec -it dind-instance sh -c "docker pull alpine:latest"
 docker rm --force dind-instance
 
 :: Docker-out-of-Docker (DooD):
