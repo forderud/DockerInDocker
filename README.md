@@ -12,6 +12,7 @@ Official [Docker in Docker](https://hub.docker.com/_/docker) images (commonly kn
 
 ### GitLab CI
 * GitLab [Use Docker to build Docker images](https://docs.gitlab.com/ci/docker/using_docker_build/)
+* GitLab runner [Advanced configuration](https://docs.gitlab.com/runner/configuration/advanced-configuration/)
 * https://oneuptime.com/blog/post/2026-01-16-docker-in-docker-dind/view
 * GitLab [CI/CD YAML syntax reference](https://docs.gitlab.com/ci/yaml/)
 * ~~Sintef [Setup your own dind-GitLab runner](https://sintef.pages.sintef.no/docs/docs.wiki/Setup-your-own-dind-GitLab-Runner.html)~~
