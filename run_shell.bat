@@ -1,6 +1,7 @@
 :: Open an interactive bash shell inside the container
 
 :: Docker-in-Docker (DinD):
+:: TODO: Propagate TLS certificates to container
 :: --network=host
 :: -e DOCKER_TLS_CERTDIR=""
 :: -e DOCKER_TLS_CERTDIR=/certs
