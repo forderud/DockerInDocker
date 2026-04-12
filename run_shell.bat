@@ -6,7 +6,7 @@
 :: -e DOCKER_TLS_CERTDIR=/certs
 :: -e DOCKER_HOST=tcp://localhost:2375
 docker run -d --privileged --name dind-instance docker:dind
-docker exec -it dind-instance sh -c "docker info; ps aux"
+docker exec -it dind-instance sh
 docker rm --force dind-instance
 
 :: Docker-out-of-Docker (DooD):
